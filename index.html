@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Introduccion</title>				
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+		<script src="js/funcion1.js" defer></script>
+		
+	</head>
+	<body>
+		<header>
+			<h1 id="inicio"> Ingeniería de Sistemas </h1>	
+		</header>
+		<nav>
+			<a href="#programacion"> Programación </a>
+			<a href="#basesdatos"> Bases de Datos </a>
+			<a href="#redes"> Redes </a>
+			<a href="#registro"> Registro </a>
+			<a href="paginas/autor.html"> Autor </a>				
+			<a href="https://fcbi.unillanos.edu.co/fcbi/is/" class="externo" target="_self"> Página del Programa </a>		
+			<a href="https://www.unillanos.edu.co/" class="externo" target="_blank"> Página de la Universidad </a>
+		</nav>
+		<main>
+			<img src="imagenes/imagen1.jpg" alt="estudiantes" class="imagen1">
+			<h2 id="programacion">Programación</h2>
+			<img src="imagenes/imagen2.jpg" alt="Programación" class="imagen2">
+			<p>
+                La programación es el proceso de crear un conjunto de instrucciones que le dicen a una computadora como realizar algún tipo de tarea. Pero no solo la acción de escribir un código para 
+                que la computadora o el software lo ejecute. Incluye, además, todas las tareas necesarias para que el código funcione correctamente y cumpla el objetivo para el cual se escribió.
+                <br>
+                <br>
+                En la actualidad, la noción de programación se encuentra muy asociada a la creación de aplicaciones de informática y videojuegos. En este sentido, es el proceso por el cual una persona desarrolla un programa, valiéndose de una herramienta que le permita escribir el código 
+                (el cual puede estar en uno o varios lenguajes, como C++, Java y Python, entre muchos otros) y de otra que sea capaz de “traducirlo” a lo que se conoce como lenguaje de máquina, que puede "comprender" el microprocesador.
+            </p>
+			<h2 id="basesdatos">Bases de Datos</h2>			
+			<img src="imagenes/imagen3.jpg" alt="Base de datos" class="imagen2">
+			<p>
+                Una base de datos es un conjunto organizado y estructurado de información que se almacena electrónicamente en un sistema 
+                informático. Permite guardar, administrar, consultar y actualizar grandes volúmenes de datos de forma rápida y segura.
+                <br>
+                <br>
+                Permiten el acceso eficiente a los datos y la implementación de operaciones complejas sobre ellos.
+            </p>
+			<h2 id="redes">Redes</h2>
+			<img src="imagenes/imagen4.jpg" alt="Redes" class="imagen2">
+			<p>
+                Una red de computadoras también denominada red informática o red de ordenadores puede definirse como un sistema conformado
+                por dispositivos, nodos y elementos de software interconectados con el fin de intercambiar datos mediante diversos medios de transmisión, tanto físicos como inalámbricos.
+                <br>
+            </p>
+		
+			<br>
+			<form>
+				<label>Nombre:</label>
+            	<input type="text"
+                   id="nombre"
+                   placeholder="Escriba su nombre">
+            	<button type="button" onclick="mostrarNombre()">
+               		Mostrar Nombre
+            	</button>
+			    <h2 id="resultado"></h2>
+        	</form>
+			
+			<br>
+			 <form action="paginas/resultado.html" method="get">
+
+            	<label>Primer número:</label>
+
+            	<input type="number" name="numero1" required>
+
+            	<label>Segundo número:</label>
+
+            	<input type="number" name="numero2" required>
+
+            	<button type="submit">
+                	Sumar
+            	</button>
+
+        	</form>
+
+			<br>
+			<h2 id="registro">Formulario de registro</h2>
+			<form action="paginas/registro.html" method="get">
+
+				<label for="usuario">Usuario:</label>
+				<input type="text" id="usuario" name="Usuario" placeholder="Escribe tu usuario" required>
+
+				<label for="clave">Contraseña:</label>
+				<input type="password" id="clave" name="Clave" placeholder="Escribe tu contraseña" required>
+
+				<label for="correo">Correo electrónico:</label>
+				<input type="email" id="correo" name="Correo" placeholder="nombre@correo.com" required>
+
+				<label for="edad">Edad:</label>
+				<input type="number" id="edad" name="Edad" min="15" max="99" placeholder="Escribe tu edad" required>
+
+				<label for="programa">Programa:</label>
+				<input type="text" id="programa" name="Programa" value="Ingeniería de Sistemas" readonly>
+
+				<p><strong>Área de mayor interés:</strong></p>
+				<label class="opcion"><input type="radio" name="Area" value="Programación" required> Programación</label>
+				<label class="opcion"><input type="radio" name="Area" value="Bases de Datos"> Bases de Datos</label>
+				<label class="opcion"><input type="radio" name="Area" value="Redes"> Redes</label>
+
+				<p><strong>Quiero recibir información sobre:</strong></p>
+				<label class="opcion"><input type="checkbox" name="Info" value="Eventos"> Eventos</label>
+				<label class="opcion"><input type="checkbox" name="Info" value="Cursos"> Cursos</label>
+				<label class="opcion"><input type="checkbox" name="Info" value="Noticias"> Noticias</label>
+
+				<br>
+
+				<label class="opcion"><input type="checkbox" name="Acepto" value="si" required> Acepto los términos y condiciones</label>
+
+				<input type="hidden" name="Origen" value="index">
+
+				<input type="submit" value="Registrarme">
+
+			</form>
+		       
+			<br>
+			
+			<br>
+			<a class="boton" href="#inicio">
+				Volver al inicio
+			</a>
+			<br>
+			<br>
+		</main>
+		<footer>
+			 <p>
+				Introduccion a la ingeniería de sistemas - 2026
+			</p>
+		</footer>
+	</body>
+</html>
